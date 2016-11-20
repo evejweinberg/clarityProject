@@ -1,0 +1,68 @@
+/**************/
+
+
+/* Custom CSS */
+
+
+/**************/
+
+body {
+    font-family: 'Dosis'
+}
+
+.container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+}
+
+.box {
+    font-size: 14em;
+    min-height: 300px;
+    max-height: 900px;
+    /*margin: auto;*/
+    text-align: center;
+    /*width: 100%;*/
+}
+
+.box>p {
+    margin: 65px auto;
+}
+
+#box0 {
+    background-color: #FFFFA2;
+    position: relative;
+    color: #3DCCFF;
+}
+
+#box1 {
+    background-color: #271A61;
+    position: relative;
+    color: #FFFFA2;
+}
+
+#box2 {
+    background-color: #D4B8FF;
+    position: relative;
+    color: #271A61;
+}
+
+#box3 {
+    background-color: #FF6777;
+    position: relative;
+    color: #D4B8FF;
+}
+
+#box4 {
+    background-color: #3DCCFF;
+    position: relative;
+    color: #FF6777;
+}
+
+#box5 {
+    background-color: #BFFABC;
+    position: relative;
+    color: #3DCCFF;
+}
