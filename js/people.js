@@ -92,101 +92,109 @@ color: "#b7b7b7"
 },
 {
 name: 'Undecided',
-position: "Secretary of Defense"
+position: "Secretary of Defense",
 info: 
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg"
+url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
+  color:
 },
 
 {
 name: 'Undecided',
-position: "Secretary of the Treasury"
+position: "Secretary of the Treasury",
 info:
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg"
+url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
+  color:
 },
 
 {
 name: 'Undecided',
-position: "Secretary of the Interior"
+position: "Secretary of the Interior",
 info:
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg"
+url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
+    color:
 },
 {
 name: 'Undecided',
-position: "Secretary of Agriculture"
+position: "Secretary of Agriculture",
 info:
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg"
+url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
+    color:
 },
 {
 name: 'Undecided',
-position: "Secretary of Commerce"
+position: "Secretary of Commerce",
 info:
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg"
+url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
+    color:
 },
 {
 name: 'Undecided',
-position: "Secretary of Labor"
+position: "Secretary of Labor",
 info:
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg"
+url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
+    color:
 },
 {
 name: 'Undecided',
-position: "Secretary of Health and Human Services"
+position: "Secretary of Health and Human Services",
 info:
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg"
+url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
+    color:
 },
 {
 name: 'Ben Carson (Unconfirmed)'
-position: "Secretary of Housing and Urban Development"
-info: "Carson said, 'It’s just not my preference,' in reference to having a job in Trump's cabinet. A retired nuero surgeon, Ben Carson lacks any and all experience in regards to heading housing and urban development policy. Is a Creationist."
-url: "http://a2.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,q_80,w_620/MTIxNDI3MjkzNDE1MTc5Nzg5.jpg"
+position: "Secretary of Housing and Urban Development",
+info: "Carson said, 'It’s just not my preference,' in reference to having a job in Trump's cabinet. A retired nuero surgeon, Ben Carson lacks any and all experience in regards to heading housing and urban development policy. Is a Creationist.",
+url: "http://a2.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,q_80,w_620/MTIxNDI3MjkzNDE1MTc5Nzg5.jpg",
 top:
 left:
 age: "65",
+    color:
 },
 {
 name: 'Undecided',
-position: "Secretary of Transportation"
+position: "Secretary of Transportation",
 info:
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg"
+url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
 },
 {
 name: 'Undecided',
-position: "Secretary of Energy"
+position: "Secretary of Energy",
 info:
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg"
+url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
 },
 {
 name: 'Betsy DeVos',
-position: "Secretary of Education (Confirmed)"
-info: "Big MONEY out of POLITICS? The DeVoS FAMILY is one of the largest contributors to the Michigan Republican Party. Historically the Devos family has made political donations to oppose Same-Sex Marriage. Douglas and Maria DeVos Foundation donated $500,000 to the anti-equality National Organization for Marriage — which helped shoot down same-sex marriage initiatives in eight states. Her brother, Erik Prince, is the FOUNDER of BLACKWATER USA"
-url: "http://www.gannett-cdn.com/-mm-/802990ef3e7cfdbed5d5e0b7acce9690e37d9ba7/c=3-0-155-202&r=537&c=0-0-534-712/local/-/media/2016/02/22/DetroitNews/B99360803Z.1_20160222233727_000_G8CQO1RQ.1-0.jpg"
+position: "Secretary of Education (Confirmed)",
+info: "Big MONEY out of POLITICS? The DeVoS FAMILY is one of the largest contributors to the Michigan Republican Party. Historically the Devos family has made political donations to oppose Same-Sex Marriage. Douglas and Maria DeVos Foundation donated $500,000 to the anti-equality National Organization for Marriage — which helped shoot down same-sex marriage initiatives in eight states. Her brother, Erik Prince, is the FOUNDER of BLACKWATER USA",
+url: "http://www.gannett-cdn.com/-mm-/802990ef3e7cfdbed5d5e0b7acce9690e37d9ba7/c=3-0-155-202&r=537&c=0-0-534-712/local/-/media/2016/02/22/DetroitNews/B99360803Z.1_20160222233727_000_G8CQO1RQ.1-0.jpg",
 top:
 left:
 age: "58",
@@ -194,9 +202,9 @@ age: "58",
 
 {
 name: 'Undecided',
-position: "Secretary of Veterans Affairs"
+position: "Secretary of Veterans Affairs",
 info:
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg"
+url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
@@ -204,9 +212,9 @@ age:
 
 {
 name: 'Undecided',
-position: "Secretary of Homeland Security"
+position: "Secretary of Homeland Security",
 info:
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg"
+url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
