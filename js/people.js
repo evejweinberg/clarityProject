@@ -89,6 +89,7 @@ color: "#b7b7b7"
   top: "9%",
   left: "20%",
   age: "69",
+    color:
 },
 {
 name: 'Undecided',
