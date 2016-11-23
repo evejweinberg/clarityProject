@@ -63,7 +63,7 @@
         z-index: 30;
         width:50vw;
         transform: translateX(-25vw);
-        height: 12vw;
+        /*height: 12vw;*/
         box-shadow: 2px 2px 2px rgba(0,0,0,.4)
       }
     </style>
@@ -112,31 +112,39 @@
 
     function DrawData(data) {
 
-
+      //loop through all objects in the json
       for (var i in data){
-      var div = document.createElement('div')
-      document.body.appendChild(div);
-      div.className = "head";
-      var divdescr = document.createElement('div');
-      divdescr.innerHTML = data[i].info;
-      divdescr.className = "adjectives";
-      divdescr.style.display = "none"
-      divdescr.id='adjectives'+i
-      document.body.appendChild(divdescr);
+
+        //create a div for each one, give it the class so it gets styled from the css
+        var div = document.createElement('div')
+        document.body.appendChild(div);
+        div.className = "head";
+        div.id = 'div'+i
+        div.style.top = data[i].top
+        div.style.left = data[i].left
+
+        //add image to the div, as a child
+        var img = document.createElement('img')
+        img.src = data[i].url
+        div.appendChild(img)
+
+        //create a div for the info of that person
+        var divdescr = document.createElement('div');
+        divdescr.innerHTML =  '<strong>'+ data[i].name + '</strong><br>' + data[i].position + '<br> Age: '+ data[i].age + '<br>'+ data[i].info;
+        divdescr.className = "adjectives";
+        divdescr.style.color = data[i].color;
+        divdescr.style.display = "none"
+        divdescr.id='adjectives'+i
+        document.body.appendChild(divdescr);
 
 
-
-      div.id = 'div'+i
-      div.style.top = data[i].top
-      div.style.left = data[i].left
-      var img = document.createElement('img')
-      img.src = data[i].url
-      console.log(data[i].info, '#div'+i)
-      div.appendChild(img)
-
-
-      document.getElementById('div'+i).onmouseover = function () {
-        console.log(this.id)
+        document.getElementById('div'+i).onmouseover = function () {
+          document.getElementById("adjectives"+this.id[3]).style.display = 'block'
+          // .innerHTML = data[this.id[3]].info)
+        }
+        document.getElementById('div'+i).onmouseout = function () {
+          document.getElementById("adjectives"+this.id[3]).style.display = 'none'
+          // .innerHTML = data[this.id[3]].info)
         }
     }
   }
