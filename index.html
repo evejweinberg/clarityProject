@@ -85,27 +85,13 @@
 
 <div id="bg-img" >
 
-  <div class="adjectives">
+  <!-- <div class="adjectives" id="description">
     Type goes in here
 
-  </div>
+  </div> -->
+
+
       <div id="image-all-holder">
-
-      <!-- <div class="head" style="top:36%; left:10.1%">
-          <img src="img/Mike-Pompeo.jpg" alt="" />
-      </div> -->
-
-      <!-- <div class="head" style="top:22%; left:8.1%">
-          <img src="img/Mike-Pompeo.jpg" alt="" />
-      </div> -->
-
-      <!-- <div class="head" style="top:35%; left:2%">
-          <img src="img/Mike-Pompeo.jpg" alt="" />
-      </div> -->
-
-      <!-- <div class="head" style="top:32%; left:17.6%">
-          <img src="img/Mike-Pompeo.jpg" alt="" />
-      </div> -->
 
     </div>
 
@@ -128,19 +114,39 @@
 
 
       for (var i in data){
-        console.log(data[i])
       var div = document.createElement('div')
       document.body.appendChild(div);
       div.className = "head";
+      var divdescr = document.createElement('div');
+      divdescr.innerHTML = data[i].info;
+      divdescr.className = "adjectives";
+      divdescr.style.display = "none"
+      divdescr.id='adjectives'+i
+      document.body.appendChild(divdescr);
+
+
+
+      div.id = 'div'+i
       div.style.top = data[i].top
       div.style.left = data[i].left
       var img = document.createElement('img')
       img.src = data[i].url
+      console.log(data[i].info, '#div'+i)
       div.appendChild(img)
-      }
 
 
+      document.getElementById('div'+i).onmouseover = function () {
+        console.log(this.id)
+        }
     }
+  }
+
+    // $('#div'+i).bind("mouseover",function(){
+    //   console.log('adjectives'+i)
+    //
+    //   document.getElementById('adjectives'+i).display = 'show';
+    // });
+
 
     </script>
 
