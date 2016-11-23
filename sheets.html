@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.0.0-alpha1.js"></script>
+  </head>
+
+  <body>
+    <ul id="characters-list"></ul>
+
+    <script>
+      var sheetsuUrl = "https://sheetsu.com/apis/v1.0/020b2c0f";
+      var Myurl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQpntwO4k3ST5OTpCmI2YKkoqi7Z2gRgqDkdxx0N4eADcB6wycFREDIDv9C4x7q6dPO1bmLwVzh-Wmp/pubhtml";
+
+
+      $.ajax({
+        url: sheetsuUrl,
+        // url: Myurl,
+        dataType: 'json',
+        type: 'GET',
+
+        // place for handling successful response
+        success: function(data) {
+          addCharacters(data);
+        },
+
+        // handling error response
+        error: function(data) {
+          console.log(data);
+        }
+      });
+
+      addCharacters = function(characters) {
+        var list = $('#characters-list');
+        for(var i=0; i<characters.length; i+=1) {
+          char = characters[i];
+          html = "<li id=" + char.id + "><h3>" + char.name + "</h3><p>Score: " + char.score + "</p></li>";
+          list.append(html);
+        }
+      }
+    </script>
+  </body>
+</html>

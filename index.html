@@ -34,7 +34,7 @@
       }
 
       #image-all-holder{
-        background-image: url("img/all.png");
+        /*background-image: url("img/all.png");*/
         background-size: 100% auto;
         position: fixed;
         height: 60vw;
@@ -46,7 +46,7 @@
       }
 
       #bg-img{
-        background-image: url("img/all.png");
+        /*background-image: url("img/all.png");*/
         position: fixed;
         width: 100%;
         /*border: green solid 2px;*/
@@ -71,11 +71,14 @@
 
   </head>
   <body>
-    
+
     <script src="js/tabletop.js"></script>
+    <script src="js/people.js">
+
+    </script>
+
+    <!-- <script src="js/gss.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
 
       <h1>WHO IS RUNNING OUR COUNTRY?</h1>
 
@@ -88,21 +91,21 @@
   </div>
       <div id="image-all-holder">
 
-      <div class="head" style="top:36%; left:10.1%">
+      <!-- <div class="head" style="top:36%; left:10.1%">
           <img src="img/Mike-Pompeo.jpg" alt="" />
-      </div>
+      </div> -->
 
-      <div class="head" style="top:28.9%; left:8.1%">
+      <!-- <div class="head" style="top:22%; left:8.1%">
           <img src="img/Mike-Pompeo.jpg" alt="" />
-      </div>
+      </div> -->
 
-      <div class="head" style="top:35%; left:2%">
+      <!-- <div class="head" style="top:35%; left:2%">
           <img src="img/Mike-Pompeo.jpg" alt="" />
-      </div>
+      </div> -->
 
-      <div class="head" style="top:32%; left:17.6%">
+      <!-- <div class="head" style="top:32%; left:17.6%">
           <img src="img/Mike-Pompeo.jpg" alt="" />
-      </div>
+      </div> -->
 
     </div>
 
@@ -113,48 +116,28 @@
 
     <script type="text/javascript">
 
-    window.onload = function() { init() };
 
-    var allDivs = [];
-    var allImages = [];
-    var table;
+    window.onload = function(){
+      DrawData(people)
 
-
-
-    function init(){
-      // Make the request
-      var csvVersion = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQtCyzWRFcW-ud3ichk4BYVb6S-476MDDeYGWyFHLRvO7_bbhh5LXtTlH7rPdxbKnDrNigP8dMAOOeK/pub?output=csv"
-      var hisURL = "https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AmYzu_s7QHsmdDNZUzRlYldnWTZCLXdrMXlYQzVxSFE&output=html"
-      //temp usage of a google spreadsheet to test incoming data to variables
-      var Myurl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQtCyzWRFcW-ud3ichk4BYVb6S-476MDDeYGWyFHLRvO7_bbhh5LXtTlH7rPdxbKnDrNigP8dMAOOeK/pubhtml";
-
-      table = Tabletop.init({
-          key: Myurl, // The url of the published google sheet
-          callback: gotData, // A callback for when the data comes in
-          simpleSheet: true, // This makes things simpler for just a single worksheet of rows
-      });
-    }
+    };
 
 
 
-    function gotData(data, tabletop) {
-      console.log(data)
-        // for (i in data){
-        setInterval(table.fetch(updateAllData(data)), 10000)
-            // }
-    }
+    function DrawData(data) {
 
-    function updateAllData(data) {
-      // console.log(data)
 
-      // for (var i in data.length){
-      // var div = document.createElement('div')
-      // div.style.top = data[i].top + '%'
-      // div.style.left = data[i].left + '%'
-      // var img = document.createElement('img')
-      // img.src = data[i].imageURL
-      // div.appendChild(img)
-      // }
+      for (var i in data){
+        console.log(data[i])
+      var div = document.createElement('div')
+      document.body.appendChild(div);
+      div.className = "head";
+      div.style.top = data[i].top
+      div.style.left = data[i].left
+      var img = document.createElement('img')
+      img.src = data[i].url
+      div.appendChild(img)
+      }
 
 
     }

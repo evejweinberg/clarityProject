@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Briefcase JS - example</title>
+    <script type="text/javascript" src="js/briefcase.js"></script>
+
+</head>
+<body>
+  <div>The published spreadsheet:</div>
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtCyzWRFcW-ud3ichk4BYVb6S-476MDDeYGWyFHLRvO7_bbhh5LXtTlH7rPdxbKnDrNigP8dMAOOeK/pubhtml?gid=0&single=true" width="505" height="150" scrolling="no" frameborder="0"></iframe>
+
+
+
+  <div>The data retrieved with Briefcase:</div>
+	<div id="content" style="white-space:pre-wrap;"></div>
+  <script type="text/javascript">
+    briefcase.getJSON({ id:"1nLQeSvCwV9EorcEFuNibvmqDEMz-cDwIEfmyJ6TpJsI" }, printElements);
+    briefcase.getJSON({ id:"2PACX-1vQtCyzWRFcW-ud3ichk4BYVb6S-476MDDeYGWyFHLRvO7_bbhh5LXtTlH7rPdxbKnDrNigP8dMAOOeK" }, printElementsB);
+
+    function printElements(data) {
+      // document.getElementById("content").innerHTML = JSON.stringify(data, null, "\t");
+    }
+
+    function printElementsB(data) {
+      document.getElementById("content").innerHTML = JSON.stringify(data, null, "\t");
+    }
+  </script>
+</body>
+</html>
