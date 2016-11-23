@@ -199,6 +199,7 @@ url: "http://www.gannett-cdn.com/-mm-/802990ef3e7cfdbed5d5e0b7acce9690e37d9ba7/c
 top:
 left:
 age: "58",
+   color:
 },
 
 {
@@ -209,6 +210,7 @@ url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
+   color:
 },
 
 {
@@ -219,6 +221,7 @@ url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:
 left:
 age:
+   color:
 
 }
 ]
