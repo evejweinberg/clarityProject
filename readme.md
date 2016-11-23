@@ -15,4 +15,4 @@ change the placement of the images in the people.js json file.
 add text color as hex codes in the people.js json
 
 
-![Alt text]('img/cp.gif')
+![Alt text](img/cp.gif)
