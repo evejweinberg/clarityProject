@@ -120,8 +120,11 @@
         document.body.appendChild(div);
         div.className = "head";
         div.id = 'div'+i
-        div.style.top = data[i].top
-        div.style.left = data[i].left
+        if (data[i].top != ""){  div.style.top = data[i].top}
+        else {div.style.top = 4*i+"%"; console.log('choose top for '+ i)}
+        if (data[i].left != "")
+        {div.style.left = data[i].left}
+        else {div.style.left = "1%"; console.log('choose left for '+ i)}
 
         //add image to the div, as a child
         var img = document.createElement('img')
@@ -137,23 +140,37 @@
         divdescr.id='adjectives'+i
         document.body.appendChild(divdescr);
 
-
+        //actions on rollover
+        //for each item, get it's id and do this on mouseover
         document.getElementById('div'+i).onmouseover = function () {
-          document.getElementById("adjectives"+this.id[3]).style.display = 'block'
-          // .innerHTML = data[this.id[3]].info)
+
+          //this is clunky and round about with the double digit thing, but oh well
+          //if we are in double digits
+          if (this.id.length>4){
+            document.getElementById("adjectives"+this.id[3]+this.id[4]).style.display = 'block'
+          }
+          //if we are in single digits
+          else {
+            document.getElementById("adjectives"+this.id[3]).style.display = 'block'
+          }
         }
+
+        //action when mouse is not on rollover
         document.getElementById('div'+i).onmouseout = function () {
-          document.getElementById("adjectives"+this.id[3]).style.display = 'none'
-          // .innerHTML = data[this.id[3]].info)
+          //if we are in double digits
+          if (this.id.length>4){
+            document.getElementById("adjectives"+this.id[3]+this.id[4]).style.display = 'none'
+          }
+          //if we are in single digits
+          else {
+            document.getElementById("adjectives"+this.id[3]).style.display = 'none'
+
+          }
         }
     }
   }
 
-    // $('#div'+i).bind("mouseover",function(){
-    //   console.log('adjectives'+i)
-    //
-    //   document.getElementById('adjectives'+i).display = 'show';
-    // });
+
 
 
     </script>
