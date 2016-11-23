@@ -13,3 +13,6 @@ change the size of the headshots in index.html, line 21:
 change the placement of the images in the people.js json file.
 
 add text color as hex codes in the people.js json
+
+
+![Alt text]('img/cp.gif')
