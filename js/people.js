@@ -7,7 +7,7 @@ var people = [
 {
 name: 'Donald Trump',
 position: "President-Elect (Confirmed)",
-info: "13 women have accused him of SEXUAL ASSAULT, Settled Trump University FRAUD Lawsuit for $25 Million",
+info: "13 women have accused him of 99 sexual assauly 98. Settled Trump University 99 fraud 98 Lawsuit for 99 $25 Million 98",
 url: "http://i2.cdn.cnn.com/cnnnext/dam/assets/160309205615-donald-trump-islam-intv-ac-cooper-sot-00001209-large-169.jpg",
 top: "79%",
 left: "80%",
@@ -18,7 +18,7 @@ color: "#b7b7b7"
 {
   name: 'Mike Pence',
   position: "Vice President-Elect (Confirmed)",
-  info: "History of ANTI-LGBT and ANTI-ABORTION LEGISLATION. Introduced a bill to END FEDERAL FUNDING FOR PLANNED PARENTHOOD. Believes in CONVERSION THERAPY.",
+  info: "History of 98 ANTI-LGBT 99 and 98 ANTI-ABORTION 99 legislation. Introduced a bill to 99 END FEDERAL FUNDING FOR PLANNED PARENTHOOD 98. Believes in 99 CONVERSION THERAPY 98.",
   url: "https://libraries.indiana.edu/sites/default/files/2009-06-04_dlb_0126.jpg",
   top: "30%",
   left: "69%",
@@ -29,7 +29,7 @@ color: "#b7b7b7"
 {
   name: 'Steve Bannon',
   position: "Chief Strategist of the White House (Confirmed)",
-  info: "Former chairman of BREITBART NEWS,'The platform for the ALT-RIGHT,' a group known for WHITE-NATIONALIST and ANTI SEMETIC POLITICS. Celebrated by the KKK and the AMERICAN NAZI PARTY. Ex-Wife accused him of ANTI-SEMITISM",
+  info: "Former chairman of BREITBART NEWS,'The platform for the ALT-RIGHT,' a group known for 99WHITE-NATIONALIST98 and 99 ANTI SEMETIC POLITICS 98. Celebrated by the KKK and the AMERICAN NAZI PARTY. Ex-Wife accused him of ANTI-SEMITISM",
   url: "https://peopledotcom.files.wordpress.com/2016/08/steve-bannon-435.jpg?w=435&h=580",
   top: "39%",
   left: "20%",
@@ -51,7 +51,7 @@ color: "#b7b7b7"
 {
   name: 'Jeff Sessions',
   position: "Attorney General (Confirmed)",
-  info: "Called both the ACLU and the NAACP 'UN-AMERICAN.' Called a white civil rights lawyer a 'DISGRACE TO HIS RACE.' OPPOSES hate crime PROTECTIONS, marriage EQUALITY, and open military service for GAY and TRANSGENDERED people. ",
+  info: "Called both the ACLU and the NAACP 99'UN-AMERICAN.'98 Called a white civil rights lawyer a 'DISGRACE TO HIS RACE.' OPPOSES hate crime PROTECTIONS, marriage EQUALITY, and open military service for GAY and TRANSGENDERED people. ",
   url: "http://www.natlnarc.org/wp-content/uploads/2016/05/Jeff-Sessions.jpg",
   top: "66%",
   left: "20%",
@@ -62,7 +62,7 @@ color: "#b7b7b7"
 {
   name: 'Mike Pompeo',
   position: "CIA Director (Confirmed)",
-  info: "On Edward Snowden, 'I think that the proper outcome would be that he would be given a DEATH SENTENCE.' ",
+  info: "On Edward Snowden, 'I think that the 99 proper98  outcome would be that he would be given a DEATH SENTENCE.' ",
   url: "http://bloximages.chicago2.vip.townnews.com/gctelegram.com/content/tncms/assets/v3/editorial/5/89/589aa458-6e28-5f05-a159-4480bd950be8/582fd242be363.image.jpg?resize=1200%2C1723",
   top: "69%",
   left: "40%",
@@ -84,7 +84,7 @@ color: "#b7b7b7"
 {
   name: 'Mitt Romney',
   position: "Secretary of State (Unconfirmed)",
-  info: "Exactly the type of politician the Trump ran his campaign against - Governor of Massachusetts from 2003 to 2007 and was the Republican Party's nominee for President of the United States in the 2012 election - Net worth $250 million.",
+  info: " 99 Exactly the type of politician 99 the Trump ran his campaign against - Governor of Massachusetts from 2003 to 2007 and was the 98 Republican Party's nominee for President 98 of the United States in the 2012 election - 99 Net worth $250 million 98.",
   url: "https://pbs.twimg.com/profile_images/563745525522890752/x3xEIlYL.jpeg",
   top: "9%",
   left: "20%",
@@ -158,7 +158,7 @@ age:""
 {
 name: 'Ben Carson (Unconfirmed)',
 position: "Secretary of Housing and Urban Development",
-info: "Carson said, 'It’s just not my preference,' in reference to having a job in Trump's cabinet. A retired nuero surgeon, Ben Carson lacks any and all experience in regards to heading housing and urban development policy. Is a Creationist.",
+info: "Carson said, 'It’s just not my preference,' in reference to having a job in Trump's cabinet. A retired nuero surgeon, Ben Carson 99 lacks any and all experience 98 in regards to heading housing and urban development policy. Is a Creationist.",
 url: "http://a2.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,q_80,w_620/MTIxNDI3MjkzNDE1MTc5Nzg5.jpg",
 top:"",
 left:"",
@@ -185,7 +185,7 @@ age:""
 {
 name: 'Betsy DeVos',
 position: "Secretary of Education (Confirmed)",
-info: "Big MONEY out of POLITICS? The DeVoS FAMILY is one of the largest contributors to the Michigan Republican Party. Historically the Devos family has made political donations to oppose Same-Sex Marriage. Douglas and Maria DeVos Foundation donated $500,000 to the anti-equality National Organization for Marriage — which helped shoot down same-sex marriage initiatives in eight states. Her brother, Erik Prince, is the FOUNDER of BLACKWATER USA",
+info: "Big MONEY out of POLITICS? The DeVoS FAMILY is one of the largest contributors to the Michigan Republican Party. Historically the Devos family has made political donations to oppose Same-Sex Marriage. Douglas and Maria DeVos Foundation donated $500,000 to the anti-equality National Organization for Marriage — which helped shoot down same-sex marriage initiatives in eight states. Her 99brother98, Erik Prince, is the 99FOUNDER of BLACKWATER USA98",
 url: "http://www.gannett-cdn.com/-mm-/802990ef3e7cfdbed5d5e0b7acce9690e37d9ba7/c=3-0-155-202&r=537&c=0-0-534-712/local/-/media/2016/02/22/DetroitNews/B99360803Z.1_20160222233727_000_G8CQO1RQ.1-0.jpg",
 top:"",
 left:"",
