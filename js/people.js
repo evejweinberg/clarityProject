@@ -1,7 +1,6 @@
 var people = [
 
-  {
-  },
+
 
 
 {
@@ -41,7 +40,8 @@ color: "#b7b7b7"
   name: 'Ret. Lt. Gen. Mike Flynn',
   position: "National Security Advisor (Confirmed)",
   info: "Has refered to Islam as a 'CANCER,' Fired by Obama Administration in 2014",
-  url: "http://i2.cdn.cnn.com/cnnnext/dam/assets/160309205615-donald-trump-islam-intv-ac-cooper-sot-00001209-large-169.jpg",
+  // url: "http://i2.cdn.cnn.com/cnnnext/dam/assets/160309205615-donald-trump-islam-intv-ac-cooper-sot-00001209-large-169.jpg",
+  url: 'img/flynn.jpg',
   top: "40%",
   left: "10%",
   age: "57",
@@ -84,7 +84,7 @@ color: "#b7b7b7"
 {
   name: 'Mitt Romney',
   position: "Secretary of State (Unconfirmed)",
-  info: " 99 Exactly the type of politician 99 the Trump ran his campaign against - Governor of Massachusetts from 2003 to 2007 and was the 98 Republican Party's nominee for President 98 of the United States in the 2012 election - 99 Net worth $250 million 98.",
+  info: "  Exactly the type of politician  the Trump ran his campaign against - Governor of Massachusetts from 2003 to 2007 and was the  Republican Party's nominee for President  of the United States in the 2012 election - 99 Net worth $250 million 98.",
   url: "https://pbs.twimg.com/profile_images/563745525522890752/x3xEIlYL.jpeg",
   top: "9%",
   left: "20%",
@@ -154,6 +154,7 @@ url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:"",
 left:"",
 age:""
+
 },
 {
 name: 'Ben Carson (Unconfirmed)',
@@ -186,7 +187,8 @@ age:""
 name: 'Betsy DeVos',
 position: "Secretary of Education (Confirmed)",
 info: "Big MONEY out of POLITICS? The DeVoS FAMILY is one of the largest contributors to the Michigan Republican Party. Historically the Devos family has made political donations to oppose Same-Sex Marriage. Douglas and Maria DeVos Foundation donated $500,000 to the anti-equality National Organization for Marriage — which helped shoot down same-sex marriage initiatives in eight states. Her 99brother98, Erik Prince, is the 99FOUNDER of BLACKWATER USA98",
-url: "http://www.gannett-cdn.com/-mm-/802990ef3e7cfdbed5d5e0b7acce9690e37d9ba7/c=3-0-155-202&r=537&c=0-0-534-712/local/-/media/2016/02/22/DetroitNews/B99360803Z.1_20160222233727_000_G8CQO1RQ.1-0.jpg",
+// url: "http://www.gannett-cdn.com/-mm-/802990ef3e7cfdbed5d5e0b7acce9690e37d9ba7/c=3-0-155-202&r=537&c=0-0-534-712/local/-/media/2016/02/22/DetroitNews/B99360803Z.1_20160222233727_000_G8CQO1RQ.1-0.jpg",
+url:  'img/devos.jpg',
 top:"",
 left:"",
 age: "58",

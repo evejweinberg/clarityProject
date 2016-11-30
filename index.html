@@ -6,6 +6,7 @@
 
     <style media="screen">
       body{
+        font-family: 'Slabo 27px', serif;
         width: 100%;
         height: 100%;
         margin: auto;
@@ -25,8 +26,8 @@
 
       .head{
         position: absolute;
-        width: 5vw;
-        height: 5vw;
+        /*width: 4.5vw;*/
+        height: 25vw;
         /*border: red solid 2px;*/
         z-index: 10;
       }
@@ -39,26 +40,41 @@
       }
 
       #image-all-holder{
-        /*background-image: url("img/all.png");*/
         background-size: 100% auto;
         position: fixed;
         height: 60vw;
         width: 100%;
         z-index: 20;
-        /*border: blue solid 2px;*/
         background-repeat: no-repeat;;
 
       }
 
       #bg-img{
-        /*background-image: url("img/all.png");*/
         position: fixed;
         width: 100%;
-        /*border: green solid 2px;*/
 
       }
 
-      .adjectives{
+      h1{
+        text-align: center;
+        display: inline;
+        margin-top: -7px;
+      }
+
+      .header{
+        position: relative;
+        text-align: center;
+        top: 0px;
+      }
+
+      #header-img{
+        height: 70px;
+        float: right;
+        display: inline;
+        position: relative;
+      }
+
+      .description{
         margin-top: 1vw;
         padding: 1vw;
         background-color: white;
@@ -73,6 +89,8 @@
       }
     </style>
 
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
 
   </head>
   <body>
@@ -84,17 +102,15 @@
 
     <!-- <script src="js/gss.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <div class="header">
 
+      <img src="img/flag.gif" id="header-img">
       <h1>WHO IS RUNNING OUR COUNTRY?</h1>
+      <img src="img/flag.gif" id="header-img">
+    </div>
 
 
 <div id="bg-img" >
-
-  <!-- <div class="adjectives" id="description">
-    Type goes in here
-
-  </div> -->
-
 
       <div id="image-all-holder">
 
@@ -106,6 +122,8 @@
 
 
     <script type="text/javascript">
+
+    $(".images").width($(window).width()/23)
 
     var colors = ["#a63251", "#010540", "#65a6bf", "#f2d9ba","#f2695c"]
 
@@ -122,24 +140,26 @@
       //loop through all objects in the json
       for (var i in data){
 
-        //create a div for each one, give it the class so it gets styled from the css
+        //create a div for each image, give it the class so it gets styled from the css
         var div = document.createElement('div')
+        //add it ot the body
         document.body.appendChild(div);
         div.className = "head";
         div.id = 'div'+i
         div.style.top = '50%'
         div.style.left = i*50 + 'px'
+
+        //if we want to place them manually do this
         // if (data[i].top != ""){  div.style.top = data[i].top}
         // else {div.style.top = 4*i+"%"; console.log('choose top for '+ i)}
         // if (data[i].left != "")
         // {div.style.left = data[i].left}
         // else {div.style.left = "1%"; console.log('choose left for '+ i)}
 
-        //add image to the div, as a child
         var img = document.createElement('img')
         img.src = data[i].url
         img.className = "images"
-        img.id = "0"+i + "0-images"
+        img.id = i
         div.appendChild(img)
 
 
@@ -151,100 +171,48 @@
         //create a div for the info of that person
         var divdescr = document.createElement('div');
         divdescr.innerHTML =  '<strong>'+ data[i].name + '</strong><br>' + data[i].position + '<br> Age: '+ data[i].age + '<br>'+ newstring2;
-        divdescr.className = "adjectives";
+        divdescr.className = "description";
         divdescr.style.color = colors[i%colors.length];
         divdescr.style.display = "none"
-        divdescr.id='adjectives0'+i
+        divdescr.id='descr0'+i
         document.body.appendChild(divdescr);
 
 
         var elems = $('.images');
-        var texts = $('.adjectives');
-        elems.on('mouseenter mouseleave', function(e) {
+        // var texts = $('.adjectives');
+        //if any image is rolled over
+        elems.on('mouseenter', function(e) {
           // console.log(this)
-          var num = this.id[0]+this.id[1]+this.id[2]
-         var numA = this.id[0]+this.id[1]
+        var num = this.id
+            for (var i in people){
+              if (i != num){
+                $('#descr0'+i).fadeOut(10)
+              } else {
+                $('#descr0'+i).fadeIn()
+              }
 
-          if (this.id[2]==0){
-            console.log("adjectives"+numA)
-            $('#adjectives'+numA).fadeIn()
-            // document.getElementById("adjectives"+numA).style.display = 'block'
-          } else {
-            // console.log("adjectives"+num)
-            $('#adjectives'+num).fadeIn()
-            // document.getElementById("adjectives"+num).style.display = 'block'
-
-          }
-
-          for (var i in people){
-
-            // document.getElementById("adjectives"+num).style.display = 'block'
+            }
 
 
-              // document.getElementById('div'+i)
 
-          }
-
-          // texts.not(this).stop(true).fadeTo('fast', e.type=='mouseenter'?1:0);
-
-          // elems.not(this).stop(true).fadeTo('fast', e.type=='mouseenter'?0.5:1);
         });
 
 
 
-        //actions on rollover
-        //for each item, get it's id and do this on mouseover
-        // $('.adjectives').each(function(obj) {
-        // document.getElementById('div'+i).onmouseover = function () {
+    } //for loop over
+  } //function over
 
 
 
-        //     console.log(obj)
-        //
-        //     if (obj == this){
-        //       // console.log(this)
-        //     } else {
-        //
-        //       if (this.id.length>4){
-        //         // document.getElementById("adjectives"+this.id[3]+this.id[4]).style.display = 'block'
-        //       }
-        //       //if we are in single digits
-        //       else {
-        //         // document.getElementById("adjectives"+this.id[3]).style.display = 'block'
-        //       }
-        //
-        //     }
-        //
-        //   });
-        // }
 
-          //this is clunky and round about with the double digit thing, but oh well
-          //if we are in double digits
-          // if (this.id.length>4){
-          //   document.getElementById("adjectives"+this.id[3]+this.id[4]).style.display = 'block'
-          // }
-          // //if we are in single digits
-          // else {
-          //   document.getElementById("adjectives"+this.id[3]).style.display = 'block'
-          // }
+  $(window).resize(function(){
+    $(".head").width($(window).width()/people.length)
+    for (var i in people){
 
-
-        // }
-
-        //action when mouse is not on rollover
-        // document.getElementById('div'+i).onmouseout = function () {
-        //   //if we are in double digits
-        //   if (this.id.length>4){
-        //     document.getElementById("adjectives"+this.id[3]+this.id[4]).style.display = 'none'
-        //   }
-        //   //if we are in single digits
-        //   else {
-        //     document.getElementById("adjectives"+this.id[3]).style.display = 'none'
-        //
-        //   }
-        // }
+      $("#div"+i).css({left: ($(window).width()/people.length)*i})
     }
-  }
+
+  })
 
 
 
