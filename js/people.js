@@ -214,6 +214,7 @@ left:"30%",
 age:""
 
 },
+  {
 name: 'Gov. Nikki Haley',
 position: "U.S. Ambassador to the United Nations",
 info:"She said she was 99'not a fan'98 of the Republican nominee. 99Leader98 in removing the Confederate flag from South Carolina’s Capitol grounds",
@@ -221,8 +222,7 @@ url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:"30%",
 left:"30%",
 age:""
-
+  }
 ]
 
-]
 
