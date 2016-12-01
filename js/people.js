@@ -131,7 +131,7 @@ age:""
 {
 name: 'Wilbur Ross',
 position: "Secretary of Commerce",
-info:"",
+info:"99net worth of $2.9 billion98",
 url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:"",
 left:"",
@@ -149,7 +149,7 @@ age:""
 {
 name: 'Tom Price',
 position: "Secretary of Health and Human Services",
-info:"Price describes himself as a member of the Tea Party and 99opposes98 both 99abortion and gay marriage98",
+info:"Price describes himself as a member of the Tea Party and 99opposes98 both 99abortion98 and 99gay marriage98",
 url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:"",
 left:"",
@@ -216,11 +216,13 @@ age:""
 },
 name: 'Gov. Nikki Haley',
 position: "U.S. Ambassador to the United Nations",
-info:"",
+info:"She said she was 99'not a fan'98 of the Republican nominee. 99Leader98 in removing the Confederate flag from South Carolina’s Capitol grounds",
 url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:"30%",
 left:"30%",
 age:""
+
+]
 
 ]
 
