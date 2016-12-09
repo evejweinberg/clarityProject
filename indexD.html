@@ -25,34 +25,21 @@
       }
 
       .head{
-        position: absolute;
-        /*width: 4.5vw;*/
-        height: 5vw;
-        /*border: red solid 2px;*/
-        z-index: 10;
-      }
-
-      .head > img{
-        object-fit: cover;
         width: 100%;
         height: 100%;
-
-      }
-
-      #image-all-holder{
-        background-size: 100% auto;
-        position: fixed;
-        height: 60vw;
-        width: 100%;
-        z-index: 20;
-        background-repeat: no-repeat;;
-
+        transform: translate(-50%, -50%);
       }
 
       #bg-img{
         position: fixed;
         width: 100%;
 
+      }
+
+      .head > img{
+        width: 100%;
+        transform: translate(-50%, -50%);
+        height: 100%;
       }
 
       h1{
@@ -74,6 +61,14 @@
         position: relative;
       }
 
+      #change{
+        -webkit-transform: rotate(angle (7deg);
+        -moz-transform: rotate(angle (7deg);
+        -o-transform: rotate(angle (7deg);
+        -ms-transform: rotate(angle (7deg);
+
+      }
+
       .description{
         margin-top: 1vw;
         padding: 1vw;
@@ -87,9 +82,26 @@
         /*height: 12vw;*/
         /*box-shadow: 2px 2px 2px rgba(0,0,0,.4)*/
       }
+
+
     </style>
 
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
 
 
   </head>
@@ -109,37 +121,23 @@
       <img src="img/flag.gif" id="header-img">
     </div>
 
+    <section id="all" class="features">
+      <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <!-- this honds the images -->
+                    <div class="row" id="Mama"></div>
+                  </div>
+              </div>
+          </div>
+    </section>
 
-<div id="bg-img" >
-
-      <div id="image-all-holder">
-
-    </div>
 
 
 
-</div>
 
 
     <script type="text/javascript">
-
-
-    $(".head").width($(window).width()/(people.length/2))
-    for (var i in people){
-      if (i<11){
-        $("#div"+i).css({left: ($(window).width()/(people.length/2))*i})
-          $("#div"+i).css({bottom: '30%'})
-      } else {
-        $("#div"+i).css({left: ($(window).width()/(people.length/2))*i - $(window).width()})
-        $("#div"+i).css({bottom: '0%'})
-
-      }
-
-    }
-
-
-
-
 
 
     var colors = ["#a63251", "#010540", "#65a6bf", "#f2d9ba","#f2695c","#5e6083"]
@@ -157,26 +155,27 @@
       for (var i in data){
 
         //create a div for each image, give it the class so it gets styled from the css
-        var div = document.createElement('div')
+        var outerRowMama = document.getElementById('Mama')
+        var divColumn = document.createElement('div')
+        divColumn.className = "col-sm-2";
+        divColumn.id = "tight-grid";
+        var PortfolioItem = document.createElement('div')
+        PortfolioItem.className = "portfolio-item";
+        divColumn.appendChild(PortfolioItem)
         //add it ot the body
-        document.body.appendChild(div);
-        div.className = "head";
-        div.id = 'div'+i
-        div.position = 'absolute'
-        div.style.left = i*50 + 'px'
+        outerRowMama.appendChild(divColumn);
+        PortfolioItem.className = "head";
+        PortfolioItem.id = 'div'+i
+        PortfolioItem.position = 'absolute'
+        PortfolioItem.style.left = i*50 + 'px'
 
-        //if we want to place them manually do this
-        // if (data[i].top != ""){  div.style.top = data[i].top}
-        // else {div.style.top = 4*i+"%"; console.log('choose top for '+ i)}
-        // if (data[i].left != "")
-        // {div.style.left = data[i].left}
-        // else {div.style.left = "1%"; console.log('choose left for '+ i)}
+
 
         var img = document.createElement('img')
         img.src = data[i].url
         img.className = "images"
         img.id = i
-        div.appendChild(img)
+        PortfolioItem.appendChild(img)
 
 
         var string = "''"+ data[i].info+ "''"
@@ -215,6 +214,17 @@
 
 
 
+        var angle = 90;
+          $(document).on("click", "#PortfolioItem", function() {
+              $("#PortfolioItem").append ( $("change"));
+
+
+
+
+          });
+
+
+
     } //for loop over
   } //function over
 
@@ -222,19 +232,7 @@
 
 
   $(window).resize(function(){
-var widthofOne = $(window).width()/(people.length/2)
-        $(".head").width($(window).width()/(people.length/2))
-        for (var i in people){
-          if (i<11){
-            $("#div"+i).css({left: ($(window).width()/(people.length/2))*i})
-              $("#div"+i).css({bottom: '30%'})
-          } else {
-            $("#div"+i).css({left: ($(window).width()/(people.length/2))*i - $(window).width()-widthofOne/2})
-            $("#div"+i).css({bottom: '0%'})
 
-          }
-
-        }
 
 
   })
