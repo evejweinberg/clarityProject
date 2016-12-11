@@ -54,10 +54,10 @@ function DrawData(data) {
     divdescr.style.color = colors[i%colors.length];
     divdescr.style.display = "none"
     divdescr.id='descr0'+i
-    document.body.appendChild(divdescr);
+    outerRowMama.appendChild(divdescr);
 
 
-    var elems = $('.images');
+    var elems = $('.inside');
     // var texts = $('.adjectives');
     //if any image is rolled over
     elems.on('mouseenter', function(e) {
