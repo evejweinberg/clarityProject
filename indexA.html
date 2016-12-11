@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clarity</title>
+
+    <style media="screen">
+      body{
+        font-family: 'Slabo 27px', serif;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        position: absolute;
+        top:0px;
+        left:0px;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      .big{
+        font-size: 40px;
+        color: black;
+      }
+
+      .head{
+        position: absolute;
+        /*width: 4.5vw;*/
+        height: 5vw;
+        /*border: red solid 2px;*/
+        z-index: 10;
+      }
+
+      .head > img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+      }
+
+      #image-all-holder{
+        background-size: 100% auto;
+        position: fixed;
+        height: 60vw;
+        width: 100%;
+        z-index: 20;
+        background-repeat: no-repeat;;
+
+      }
+
+      #bg-img{
+        position: fixed;
+        width: 100%;
+
+      }
+
+      h1{
+        text-align: center;
+        display: inline;
+        margin-top: -7px;
+      }
+
+      .header{
+        position: relative;
+        text-align: center;
+        top: 0px;
+      }
+
+      #header-img{
+        height: 70px;
+        float: right;
+        display: inline;
+        position: relative;
+      }
+
+      .description{
+        margin-top: 1vw;
+        padding: 1vw;
+        background-color: white;
+        /*border: 2px pink solid;*/
+        left: 50%;
+        position: absolute;
+        z-index: 30;
+        width:70vw;
+        transform: translateX(-35vw);
+        /*height: 12vw;*/
+        /*box-shadow: 2px 2px 2px rgba(0,0,0,.4)*/
+      }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+    <script src="js/tabletop.js"></script>
+    <script src="js/people.js">
+
+    </script>
+
+    <!-- <script src="js/gss.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <div class="header">
+
+      <img src="img/flag.gif" id="header-img">
+      <h1>WHO IS RUNNING OUR COUNTRY?</h1>
+      <img src="img/flag.gif" id="header-img">
+    </div>
+
+
+<div id="bg-img" >
+
+      <div id="image-all-holder">
+
+    </div>
+
+
+
+</div>
+
+
+    <script type="text/javascript">
+
+
+    $(".head").width($(window).width()/(people.length/2))
+    for (var i in people){
+      if (i<11){
+        $("#div"+i).css({left: ($(window).width()/(people.length/2))*i})
+          $("#div"+i).css({bottom: '30%'})
+      } else {
+        $("#div"+i).css({left: ($(window).width()/(people.length/2))*i - $(window).width()})
+        $("#div"+i).css({bottom: '0%'})
+
+      }
+
+    }
+
+
+
+
+
+
+    var colors = ["#a63251", "#010540", "#65a6bf", "#f2d9ba","#f2695c","#5e6083"]
+
+
+    window.onload = function(){
+      DrawData(people)
+    };
+
+
+
+    function DrawData(data) {
+
+      //loop through all objects in the json
+      for (var i in data){
+
+        //create a div for each image, give it the class so it gets styled from the css
+        var div = document.createElement('div')
+        //add it ot the body
+        document.body.appendChild(div);
+        div.className = "head";
+        div.id = 'div'+i
+        div.position = 'absolute'
+        div.style.left = i*50 + 'px'
+
+        //if we want to place them manually do this
+        // if (data[i].top != ""){  div.style.top = data[i].top}
+        // else {div.style.top = 4*i+"%"; console.log('choose top for '+ i)}
+        // if (data[i].left != "")
+        // {div.style.left = data[i].left}
+        // else {div.style.left = "1%"; console.log('choose left for '+ i)}
+
+        var img = document.createElement('img')
+        img.src = data[i].url
+        img.className = "images"
+        img.id = i
+        div.appendChild(img)
+
+
+        var string = "''"+ data[i].info+ "''"
+        var newstring =  string.replace(/99/g, "<span class= 'big'>");
+        var newstring2 =  newstring.replace(/98/g, "</span>");
+
+
+        //create a div for the info of that person
+        var divdescr = document.createElement('div');
+        divdescr.innerHTML =  '<strong>'+ data[i].position + '</strong><br>' + data[i].name +  '<br>'+ newstring2;
+        divdescr.className = "description";
+        divdescr.style.color = colors[i%colors.length];
+        divdescr.style.display = "none"
+        divdescr.id='descr0'+i
+        document.body.appendChild(divdescr);
+
+
+        var elems = $('.images');
+        // var texts = $('.adjectives');
+        //if any image is rolled over
+        elems.on('mouseenter', function(e) {
+          // console.log(this)
+        var num = this.id
+            for (var i in people){
+              if (i != num){
+                $('#descr0'+i).fadeOut(10)
+              } else {
+                $('#descr0'+i).fadeIn()
+              }
+
+            }
+
+
+
+        });
+
+
+
+    } //for loop over
+  } //function over
+
+
+
+
+  $(window).resize(function(){
+var widthofOne = $(window).width()/(people.length/2)
+        $(".head").width($(window).width()/(people.length/2))
+        for (var i in people){
+          if (i<11){
+            $("#div"+i).css({left: ($(window).width()/(people.length/2))*i})
+              $("#div"+i).css({bottom: '30%'})
+          } else {
+            $("#div"+i).css({left: ($(window).width()/(people.length/2))*i - $(window).width()-widthofOne/2})
+            $("#div"+i).css({bottom: '0%'})
+
+          }
+
+        }
+
+
+  })
+
+
+
+
+    </script>
+
+  </body>
+</html>

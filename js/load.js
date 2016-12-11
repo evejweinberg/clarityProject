@@ -76,8 +76,16 @@ function DrawData(data) {
 
     });
 
-    // $('.portfolio-item').onClick(function(){
-    // $(e.target).addClass('.animate_class_name');});
+//     $('.portfolio-item').on('click', function() {
+//     $(this).toggleClass('change');
+// });
+
+    $('.portfolio-item').click(function(e){
+      // $(e.target ).offsetParent().css( "border", "2px solid green" );
+      console.log(e.target)
+    $(e.target).parent().parent().addClass('change');
+    $(e.target).parent().parent().siblings().removeClass('change')
+  });
     //
     // $(".first-child").on('focus',function() {
     //    $(this).parent().addClass('change');
