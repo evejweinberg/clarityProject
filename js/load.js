@@ -82,27 +82,38 @@ function DrawData(data) {
 
     $('.portfolio-item').click(function(e){
       // $(e.target ).offsetParent().css( "border", "2px solid green" );
-      console.log(e.target)
-    $(e.target).parent().parent().addClass('change');
-    $(e.target).parent().parent().siblings().removeClass('change')
+      var targetObject = $(e.target).parent().parent()
+      var otherTargets = $(e.target).parent().parent().siblings();
+      var tween = TweenLite.to(targetObject, 1, {left:"632px", scale: "2", ease:Linear.easeNone});
+      var othertween = TweenLite.to(otherTargets,1,{left:"0px", scale: "1"})
+      console.log(targetObject)
+      tween.play()
+      othertween.play();
+    // $(e.target).parent().parent().addClass('change');
+    // $(e.target).parent().parent().siblings().removeClass('change')
+    videoRequest()
   });
-    //
-    // $(".first-child").on('focus',function() {
-    //    $(this).parent().addClass('change');
-    // });
-    //
-    // var angle = 90;
-    //   $(document).on("mousedown", ".portfolio-item", function(e) {
-    //     console.log('clicked')
-    //     console.log(e.target)
-    //       e.target.parentElement.className += " change";
-    //
-    //
-    //
-    //
-    //   });
+
 
 
 
 } //for loop over
+
 } //function over
+
+
+function videoRequest(parameter1, parameter2){
+  //parse this string with dynamic parameters
+  var jsonURL = "http://archive.org/advancedsearch.php?q=%28format%3AMPEG4+OR+format%3Ah.264%29+AND+something&fl%5B%5D=identifier&sort%5B%5D=&sort%5B%5D=&sort%5B%5D=&rows=50&page=1&output=json&callback=callback"
+  $.ajax({
+    url: jsonURL,
+    type: 'GET',
+    dataType: 'json'
+  }).done(function(data) {
+    //parse the results from here and get the first identifier string,
+    //push a new iframe element to the page
+    //http://archive.org/embed/IDENTIFIER
+    //<iframe src="https://archive.org/embed/commute" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>`
+    console.log(data)
+  });
+}
