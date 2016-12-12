@@ -104,7 +104,7 @@ function DrawData(data) {
 
 function videoRequest(parameter1, parameter2){
   //parse this string with dynamic parameters
-  var jsonURL = "http://archive.org/advancedsearch.php?q=%28format%3AMPEG4+OR+format%3Ah.264%29+AND+something&fl%5B%5D=identifier&sort%5B%5D=&sort%5B%5D=&sort%5B%5D=&rows=50&page=1&output=json&callback=callback"
+  var jsonURL = "https://archive.org/advancedsearch.php?q=%28format%3AMPEG4+OR+format%3Ah.264%29+AND+something&fl%5B%5D=identifier&sort%5B%5D=&sort%5B%5D=&sort%5B%5D=&rows=50&page=1&output=json&callback=callback"
   $.ajax({
     url: jsonURL,
     type: 'GET',
