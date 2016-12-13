@@ -118,7 +118,7 @@ function videoRequest(parameter1, parameter2){
   $('#clear-button').show();
   var videString = Tempdata.response.docs[Math.floor(Math.random()*10)].identifier
   console.log(videString)
-  document.getElementById('videoBox').src="http://archive.org/embed/"+videString;
+  document.getElementById('videoBox').src="https://archive.org/embed/"+videString;
   //parse this string with dynamic parameters
   // var jsonURL = "https://archive.org/advancedsearch.php?q=%28format%3AMPEG4+OR+format%3Ah.264%29+AND+something&fl%5B%5D=identifier&sort%5B%5D=&sort%5B%5D=&sort%5B%5D=&rows=50&page=1&output=json"
   // $.ajax({
