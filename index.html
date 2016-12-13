@@ -13,6 +13,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -24,19 +26,13 @@
     <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
 
-    <!-- Theme CSS -->
-    <!-- <link rel="stylesheet" href="css/master.css"> -->
-    <link href="css/new-age.css" rel="stylesheet">
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js">
-    </script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js">
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"> -->
+    <!-- </script> -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js">  </script> -->
+<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script> -->
 
-    </script>
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js">
-
-    </script>
+    <script src="js/testCallback.js"></script>
 
 
 
@@ -48,7 +44,6 @@
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Who Is Running This Country? <i class="fa fa-bars"></i>
@@ -57,23 +52,20 @@
 </a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                   <li>
                     <a class="page-scroll" href="#all">All</a>
                   </li>
-                  <li>
-                    <a class="page-scroll" href="#stats">Stats</a>
-                  </li>
+                  <!-- <li>
+                    <a class="page-scroll" href="#stats">Info</a>
+                  </li> -->
 
 
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#thoughts">Thoughts</a>
-                    </li> -->
+
                 </ul>
             </div>
 
@@ -90,13 +82,18 @@
 
       <section id="all" class="features">
         <div class="container">
+
               <div class="row" id="people-grid">
-                  <div class="col-lg-10 col-lg-offset-1 text-center">
+                  <div id="mainBox" class="col-lg-10 col-lg-offset-1 text-center">
                   <!-- this honds the images -->
-                      <div class="row" id="Mama"></div>
+                      <div class="row" id="Mama">
+                        <iframe id="videoBox" class="well-small span6"  src="http://archive.org/embed/I.Origins.2014.HDRip.XviDIFT" height="400px" frameborder="0"></iframe>
+
+</div>
                     </div>
                 </div>
             </div>
+            <p class="row text-center" id="clear-button">CLEAR</p>
       </section>
 
 
@@ -115,7 +112,7 @@
 <br>
 <br>
 
-    <div id="stats" class="container">
+    <!-- <div id="stats" class="container bg-grey">
         <div class="row">
             <div class="col-sm-7">
                 <div class="header-content">
@@ -131,14 +128,11 @@
                    <a href="" target="_blank">
                    <img src="img/flynn.jpg" class="img-responsive" alt="" >
                  </a>
-                 <a href="" target="_blank">
-                 <img src="img/flynn.jpg" class="img-responsive" alt="" >
-               </a>
 
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
