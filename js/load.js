@@ -1,7 +1,7 @@
 
 
 
-var colors = ["#a63251", "#010540", "#65a6bf", "#f2d9ba","#f2695c","#5e6083"]
+var colors = ["#a63251", "#010540", "#65a6bf", "#f2d9ba","#f2695c","#5e6083","#a63251", "#010540", "#65a6bf", "#f2d9ba","#f2695c","#5e6083","#a63251", "#010540", "#65a6bf", "#f2d9ba","#f2695c","#5e6083","#a63251", "#010540", "#65a6bf", "#f2d9ba","#f2695c","#5e6083"]
 var outerRowMama, lrgHead, ourDescription,alldescriptions=[];
 
 window.onload = function(){
@@ -96,10 +96,11 @@ $('#clear-button').click(function(e){
 })
 
 $('.portfolio-item').click(function(e){
-  console.log(alldescriptions[e.target.id])
   lrgHead.style.backgroundImage = e.target.style.backgroundImage
   $("#our-description").show()
   $("#our-description").html(alldescriptions[e.target.id])
+  console.log(colors[e.target.id])
+  document.getElementById('our-description').style.color = colors[e.target.id]
 
   $('#mainBox').addClass('grey-border')
   videoRequest()
