@@ -16,6 +16,17 @@ h1{
   text-align: center;
 }
 
+#our-description{
+  overflow: scroll;
+  display: none;
+  position: absolute;
+  background-color: white;
+  /*border: 5px green solid;*/
+  bottom: 0px;
+  height: 130px;
+  z-index: 100;
+}
+
 #all{
   margin-top: 40px;
 }

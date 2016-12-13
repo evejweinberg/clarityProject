@@ -2,7 +2,7 @@
 
 
 var colors = ["#a63251", "#010540", "#65a6bf", "#f2d9ba","#f2695c","#5e6083"]
-var outerRowMama, lrgHead;
+var outerRowMama, lrgHead, ourDescription,alldescriptions=[];
 
 window.onload = function(){
   DrawData(people)
@@ -19,7 +19,6 @@ function DrawData(data) {
     outerRowMama = document.getElementById('Mama')
     outerRowMama.style.position = 'relative'
     var firstChild = document.createElement('div')
-    // firstChild.style.position = 'absolute'
     firstChild.className = "col-sm-2";
     firstChild.className += " first-child";
     var PortfolioItem = document.createElement('div')
@@ -28,12 +27,10 @@ function DrawData(data) {
     PortfolioItem.className += " inside";
     firstChild.appendChild(PortfolioItem)
     outerRowMama.appendChild(firstChild);
-
     PortfolioItem.id = i
 
 
-
-    var string = "''"+ data[i].info+ "''"
+    var string = "'"+ data[i].info+ "'"
     var newstring =  string.replace(/99/g, "<span class= 'big'>");
     var newstring2 =  newstring.replace(/98/g, "</span>");
 
@@ -41,7 +38,7 @@ function DrawData(data) {
     //create a div for the info of that person
     var divdescr = document.createElement('div');
     divdescr.innerHTML =  '<strong>'+ data[i].position + '</strong><br>' + data[i].name ;
-
+    alldescriptions.push(newstring2)
     // divdescr.innerHTML =  '<strong>'+ data[i].position + '</strong><br>' + data[i].name +  '<br>'+ newstring2;
     divdescr.className = "description";
     divdescr.style.color = colors[i%colors.length];
@@ -53,6 +50,9 @@ function DrawData(data) {
     lrgHead = document.createElement('div');
     outerRowMama.appendChild(lrgHead);
     lrgHead.className = 'lrgHead col-sm-4'
+
+    ourDescription = document.getElementById('our-description');
+    ourDescription.innerHTML = newstring2
 
 
 
@@ -90,13 +90,16 @@ $('#clear-button').click(function(e){
   $('#mainBox').removeClass('grey-border')
   $('#videoBox').fadeOut()
   $('#clear-button').hide();
+  $("#our-description").hide();
 
 
 })
 
 $('.portfolio-item').click(function(e){
-  // console.log(e.target.style.backgroundImage)
+  console.log(alldescriptions[e.target.id])
   lrgHead.style.backgroundImage = e.target.style.backgroundImage
+  $("#our-description").show()
+  $("#our-description").html(alldescriptions[e.target.id])
 
   $('#mainBox').addClass('grey-border')
   videoRequest()
