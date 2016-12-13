@@ -12,6 +12,7 @@ age: "70",
 color: "#b7b7b7"
 
 },
+
 {
   name: 'Mike Pence',
   position: "Vice President-Elect (Confirmed)",
@@ -85,16 +86,27 @@ color: "#b7b7b7"
   color: "#b7b7b7"
 },
 {
-  name: 'David Petraeus',
+  name: 'Rex Tillerson',
   position: "Secretary of State (Unconfirmed)",
   jobdescription: "Carries out the President’s foreign policies through the State Department and the Foreign Service of the United State.",
-info:"In 2015, Petraeus was convicted of mishandling classified material by sharing documents with his then lover, Paula Broadwell, knowing it contained classified information. His lawyers kept him out of prison by negotiating a plea deal with the Justice Department.",
-hypocrisyrating: "10/10 - During the presidential campaign, Trump continually demonized Hillary Clinton for her use of private e-mails as secretary of state and called for her imprisonment.",
-  url: "https://pbs.twimg.com/profile_images/563745525522890752/x3xEIlYL.jpeg",
+info: "The current CEO and president of ExxonMobil Corporation. Total compensation: $27.3 million in 2015, $33.1 million in 2014 and $28.1 million in 2013. Due to Exxon's official position that climate change is a significant threat that must be addressed, he recieves a hypocrisy rating below the standard 10/10. In 2099, Tillerson signed an agreement with Russia, worth up to $300 billion, that allows ExxonMobil to drill in the offshore Arctic Kara Sea oil field, but the agreement hasn’t taken affect due to U.S. sanctions against Russia over actions in Ukraine. President Vladimir Putin awarded Tillerson the Order of Friendship in 2013.",
+hypocrisyrating: "7/10 - ",
+  url: "http://cdn.thinkprogress.org/wp-content/uploads/2014/02/AP070530019861.jpg",
   top: "9%",
   left: "20%",
   age: "69",
 },
+// {
+//   name: 'David Petraeus',
+//   position: "Secretary of State (Unconfirmed)",
+//   jobdescription: "Carries out the President’s foreign policies through the State Department and the Foreign Service of the United State.",
+// info:"In 2015, Petraeus was convicted of mishandling classified material by sharing documents with his then lover, Paula Broadwell, knowing it contained classified information. His lawyers kept him out of prison by negotiating a plea deal with the Justice Department.",
+// hypocrisyrating: "10/10 - During the presidential campaign, Trump continually demonized Hillary Clinton for her use of private e-mails as secretary of state and called for her imprisonment.",
+//   url: "https://pbs.twimg.com/profile_images/563745525522890752/x3xEIlYL.jpeg",
+//   top: "9%",
+//   left: "20%",
+//   age: "69",
+// },
 // {
 //   name: 'Mitt Romney',
 //   position: "Secretary of State (Unconfirmed)",
@@ -105,6 +117,16 @@ hypocrisyrating: "10/10 - During the presidential campaign, Trump continually de
 //   age: "69",
 // },
 {
+  name: 'Scott Pruitt',
+  position: "Administrator of the Environmental Protection Agency",
+  jobdescription: "Responsible for enforcing the nation's Clean Air and Clean Water Acts, as well as numerous other environmental statutes.",
+  info: "99unsuccessfully sued98 the 99EPA98 over a 2011 rule to limit emissions of mercury and other 99toxic98 pollutants from power plants, which the agency estimates will save up to 99 11,000 lives 98 and prevent 4,700 heart attacks and 130,000 asthma attacks per year. 99Trump's98 transition team 99praised98 Pruitt as 'A national leader against the EPA’s job-killing 99war on coal.98'",
+  url: "http://media.navigatored.com/images/scott-pruitt.jpg",
+  top: "9%",
+  left: "20%",
+  age: "69",
+},
+{
 name: 'James Mattis',
 position: "Secretary of Defense",
 jobdescription: "Under the direction of the President, the Secretary exercises authority, direction, and control over the Department of Defense.",
@@ -114,19 +136,17 @@ top: "",
 left:"",
 age:""
 },
-
-{
-name: 'Steve Mnuchin',
-position: "Secretary of the Treasury (Confirmed)",
-jobdescription: "To act as the principal economic advisor to the President and play a critical role in policy-making by bringing an economic and government financial policy perspective to issues facing the government.",
-info:"Trump campaign's national finance chair. Spent 17 years at 99Goldman Sachs98. Net 99worth $40 million98.  After the financial crisis, Mnuchin found a way to make money off the depressed real estate market. He took over OneWest Bank, which bought up and foreclosed on de-valued homes — especially in low income minority neighborhoods.",
-hypocrisyrating: "10/10 -  Trump Campain ad said Goldman Sachs ‘robbed our working class.' Trump has claimed Goldman Sachs had complete control over Hillary Clinton.",
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
-top:"",
-left:"",
-age:""
-},
-
+  {
+  name: 'Steven Mnuchin',
+  position: "Secretary of the Treasury (Confirmed)",
+  jobdescription: "To act as the principal economic advisor to the President and play a critical role in policy-making by bringing an economic and government financial policy perspective to issues facing the government.",
+  info:"Trump campaign's national finance chair. Spent 17 years at 99Goldman Sachs98. Net 99worth $40 million98.  After the financial crisis, Mnuchin found a way to make money off the depressed real estate market. He took over OneWest Bank, which bought up and foreclosed on de-valued homes — especially in low income minority neighborhoods.",
+  hypocrisyrating: "10/10 -  Trump Campain ad said Goldman Sachs ‘robbed our working class.' Trump has claimed Goldman Sachs had complete control over Hillary Clinton.",
+  url: "https://www.thenation.com/wp-content/uploads/2016/05/Steven_Mnuchin_Trump_ap_img.jpg",
+  top:"",
+  left:"",
+  age:""
+  },
 {
 name: 'Undecided',
 position: "Secretary of the Interior",
@@ -171,7 +191,7 @@ age:""
 name: 'Tom Price',
 position: "Secretary of Health and Human Services",
 jobdescription:"",
-info:"Price describes himself as a member of the Tea Party and 99opposes98 both 99abortion98 and 99gay marriage98",
+info:"Price describes himself as a member of the 99Tea Party98 and 99opposes98 both 99abortion98 and 99gay marriage98. ",
 url: "http://api.terraeclipse.com/govtrackdata/photos/400626.jpeg",
 top:"",
 left:"",
@@ -182,7 +202,7 @@ age:""
 name: 'Ben Carson (Confirmed)',
 position: "Secretary of Housing and Urban Development",
 jobdescription:"",
-info: "Carson 99said98, 99'It’s just not my preference98,' in reference 99to having a job in Trump's cabinet98. A retired nuero surgeon, Ben Carson 99 lacks any and all experience 98 in regards to 99heading housing and urban development98 policy. 99Is a Creationist98.",
+info: "Carson said,'It’s just 99not98 my 99preference98,' in reference to having a job in Trump's cabinet. A retired nuero surgeon, Ben Carson 99lacks98 any and all 99experience98 in regards to 99heading98 housing and urban development policy. Is a 99Creationist98.",
 url: "http://a2.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,q_80,w_620/MTIxNDI3MjkzNDE1MTc5Nzg5.jpg",
 top:"",
 left:"",
@@ -191,19 +211,20 @@ age: "65",
 {
 name: 'Elaine Chao',
 position: "Secretary of Transportation",
-jobdescription:"",
-info:"first Asian-American woman to hold a Cabinet position",
+jobdescription:"Oversees air, maritime, and surface transportation, and the Secretary’s primary goal is to ensure that America maintains the safest, most efficient transportation system in the world for this and future generations.",
+info:"Chao's family 99owns98 a shipping 99business98 that 99operates98 17 ships flagged in 99Liberia98 and 99Hong Kong98. First Asian-American 99woman98 to hold a 99Cabinet98 position. She resigned from Bloomberg Philanthropies last year after learning the organization planned to expand an environmental initiative to shutter coal-fired power plants.",
 url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Elaine_Chao_large.jpg/220px-Elaine_Chao_large.jpg",
 top:"",
 left:"",
 age:""
 },
+
 {
-name: 'Undecided',
-position: "Secretary of Energy",
-jobdescription:"",
-info:"",
-url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
+name: 'Rick Perry',
+position: "Secretary of Energy (Undecided)",
+jobdescription:"Charged with advancing the national, economic, and energy security of the United States; promoting scientific and technological innovation in support of that mission; and ensuring the environmental cleanup of the national nuclear weapons complex.",
+info:"During his unsuccessful 99bid98 for the 2012 Republican 99presidential98 nomination, Perry 99proposed eliminating the U.S. 99Energy Department98. In 2002, Perry described the Texas same-sex 99anti-sodomy98 law as 99'appropriate'98, described the 99Affordable98 Care Act as '99socialism98 on American soil',",
+url: "http://i.huffpost.com/gen/1217795/images/o-RICK-PERRY-facebook.jpg",
 top:"",
 left:"",
 age:""
@@ -231,7 +252,7 @@ age:""
 },
 
 {
-name: 'Marine Gen. John Kelly ',
+name: 'Gen. John Kelly ',
 position: "Secretary of Homeland Security",
 jobdescription: "Efforts to counter terrorism and enhance security, secure and manage our borders while facilitating trade and travel, enforce and administer our immigration laws, safeguard and secure cyberspace, build resilience to disasters, and provide essential support for national and economic security - in coordination with federal, state, local, international and private sector partners.",
 info:"Former Commander of the United States Southern Command, dealt with migration, organized crime and disaster relief, as well as programs to train local militaries. Outspoken voice on keeping Guantanimo Bay open. ",
@@ -245,7 +266,7 @@ age:""
 name: 'Gov. Nikki Haley',
 position: "U.S. Ambassador to the United Nations",
 jobdescription: "Represents the United States on the U.N. Security Council.",
-info:"She said she was 99'not a fan'98 of the Republican nominee. 99Leader98 in removing the Confederate flag from South Carolina’s Capitol grounds",
+info:"She said she was 99'not a fan'98 of the Republican nominee. 99Leader98 in 99removing98 the 99Confederate98 flag from South Carolina’s Capitol grounds",
 url: "http://a1.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTE1ODA0OTcxOTg0ODQ4Mzk3.jpg",
 top:"30%",
 left:"30%",
