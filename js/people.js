@@ -4,12 +4,14 @@ var people = [
 name: 'Donald Trump',
 position: "President-Elect (Confirmed)",
 jobdescription: "As Commander in Chief, has the authority to send troops into combat, and is the only one who can decide whether to use nuclear weapons. As chief executive, he enforces laws, treaties, and court rulings; develops federal policies; prepares the national budget; and appoints federal officials. Approves or vetoes acts of Congress and grants pardons.",
-info: "13 women have accused him of 99 sexual assauly 98. Settled Trump University 99 fraud 98 Lawsuit for 99 $25 Million 98. 98 Age 27, 1973 99, Trump organization charged with 99violating Fair Housing act98.",
+info: "13 women have accused him of 99 sexual assault 98. Settled Trump University 99 fraud 98 Lawsuit for 99 $25 Million 98. 98 Age 27, 1973 99, Trump organization charged with 99violating Fair Housing act98.",
 url: "http://i2.cdn.cnn.com/cnnnext/dam/assets/160309205615-donald-trump-islam-intv-ac-cooper-sot-00001209-large-169.jpg",
+//url: 'image/trump_pic.jpg',
 top: "79%",
 left: "80%",
 age: "70",
-color: "#b7b7b7"
+color: "#b7b7b7",
+video: "https://archive.org/details/WTSP_20161116_220000_10_News_at_500pm?q=name+trump+change+letters#start/325/end/382"
 
 },
 
@@ -22,7 +24,8 @@ color: "#b7b7b7"
   top: "30%",
   left: "69%",
   age: "57",
-  color: "#c6c6c6"
+  color: "#c6c6c6",
+  video: "https://archive.org/details/WRC_20160409_220000_News4_at_6#start/1747/end/1807"
 
 },
 {
@@ -34,8 +37,8 @@ color: "#b7b7b7"
   top: "39%",
   left: "20%",
   age: "62",
-  color: "#b0b0b0"
-
+  color: "#b0b0b0",
+video: "https://archive.org/details/KPIX_20161115_130000_KPIX_5_News_at_5AM#start/476/end/536"
 },
 {
   name: 'Ret. Lt. Gen. Mike Flynn',
@@ -47,7 +50,8 @@ color: "#b7b7b7"
   top: "40%",
   left: "10%",
   age: "57",
-  color: "#f4f233"
+  color: "#f4f233",
+  video: "https://archive.org/details/KQED_20161118_223000_BBC_World_News_America#start/185/end/245"
 
 },
 {
@@ -59,7 +63,8 @@ color: "#b7b7b7"
   top: "66%",
   left: "20%",
   age: "69",
-  color: "#c7b700"
+  color: "#c7b700",
+  video: "https://archive.org/details/CNNW_20161119_050000_Anderson_Cooper_360#start/759/end/819"
 
 },
 {
@@ -71,7 +76,8 @@ color: "#b7b7b7"
   top: "69%",
   left: "40%",
   age: "52",
-  color: "#cccccc"
+  color: "#cccccc",
+  video: "https://archive.org/details/WKYC_20161119_080700_Channel_3_News_at_11#start/1825/end/1885"
 
 },
 {
@@ -83,7 +89,8 @@ color: "#b7b7b7"
   top: "19%",
   left: "30%",
   age: "44",
-  color: "#b7b7b7"
+  color: "#b7b7b7",
+  video: "https://archive.org/details/WFLA_20161114_043000_News_Ch8_at_1130PM?q=Reince+Priebus+Swamp#start/2094/end/2154"
 },
 {
   name: 'Rex Tillerson',
@@ -95,6 +102,8 @@ hypocrisyrating: "7/10 - ",
   top: "9%",
   left: "20%",
   age: "69",
+  color: "",
+  video: "https://archive.org/details/CNNW_20161212_170000_CNN_Newsroom_With_Brianna_Keilar?q=Rex+Tillerson+russia#start/1680/end/1740"
 },
 // {
 //   name: 'David Petraeus',
@@ -125,6 +134,7 @@ hypocrisyrating: "7/10 - ",
   top: "9%",
   left: "20%",
   age: "69",
+  video: "https://archive.org/details/LINKTV_20161208_160000_Democracy_Now?q=Scott+Pruitt+sue#start/1140/end/1200"
 },
 {
 name: 'James Mattis',
@@ -134,7 +144,8 @@ info: "Believes torture is un-effective 'I don't find waterboarding useful'. His
 url: "http://media.worldbulletin.net/news/2016/12/02/mattis.jpg",
 top: "",
 left:"",
-age:""
+age:"",
+video: "https://archive.org/details/WFLA_20161127_150000_Meet_the_Press?q=James+Mattis+torture#start/303/end/363"
 },
   {
   name: 'Steven Mnuchin',
@@ -145,7 +156,8 @@ age:""
   url: "https://www.thenation.com/wp-content/uploads/2016/05/Steven_Mnuchin_Trump_ap_img.jpg",
   top:"",
   left:"",
-  age:""
+  age:"",
+  video: "https://archive.org/details/FBC_20161130_230000_Making_Money_With_Charles_Payne?q=steve+mnuchin+goldman#start/101/end/161"
   },
 {
 name: 'Undecided',
@@ -155,7 +167,9 @@ info:"",
 url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:"",
 left:"",
-age:""
+age:"",
+video: ""
+
 },
 {
 name: 'Undecided',
@@ -165,8 +179,10 @@ info:"",
 url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:"",
 left:"",
-age:""
+age:"",
+video: ""
 },
+
 {
 name: 'Wilbur Ross',
 position: "Secretary of Commerce",
@@ -175,8 +191,10 @@ info:"99net worth of $2.9 billion98",
 url: "http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/06/16/102761505-Wilbur_Ross.1910x1000.jpg",
 top:"",
 left:"",
-age:""
+age:"",
+video: "https://archive.org/details/MSNBCW_20161201_043000_Hardball_With_Chris_Matthews?q=wilbur+ross#start/382/end/442"
 },
+
 {
 name: 'Andy Puzder',
 position: "Secretary of Labor",
@@ -185,8 +203,10 @@ info:"CEO of a CKE restaurants, the parent company of fast-food burger chains Ca
 url: "http://www.capoliticalreview.com/wp-content/uploads/2011/07/Puzder-pic5.jpg",
 top:"",
 left:"",
-age:""
+age:"",
+video: "https://archive.org/details/KCSM_20161209_200000_Democracy_Now?q=Puzder+wage#start/2259/end/2319"
 },
+
 {
 name: 'Tom Price',
 position: "Secretary of Health and Human Services",
@@ -195,7 +215,8 @@ info:"Price describes himself as a member of the 99Tea Party98 and 99opposes98 b
 url: "http://api.terraeclipse.com/govtrackdata/photos/400626.jpeg",
 top:"",
 left:"",
-age:""
+age:"",
+video: "https://archive.org/details/CSPAN_20090919_030000_Capital_News_Today?q=Tom+Price+abortion#start/1860/end/1920"
 
 },
 {
@@ -207,6 +228,7 @@ url: "http://a2.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,q_80,w_62
 top:"",
 left:"",
 age: "65",
+video: "https://archive.org/details/MSNBCW_20161124_073000_Hardball_With_Chris_Matthews?q=Ben+Carson+experience+housing#start/988/end/1048"
 },
 {
 name: 'Elaine Chao',
@@ -216,7 +238,8 @@ info:"Chao's family 99owns98 a shipping 99business98 that 99operates98 17 ships 
 url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Elaine_Chao_large.jpg/220px-Elaine_Chao_large.jpg",
 top:"",
 left:"",
-age:""
+age:"",
+video: "https://archive.org/details/MSNBCW_20161129_170000_MSNBC_Live_With_Andrea_Mitchell?q=Elaine+Chao+shipping#start/464/end/524"
 },
 
 {
@@ -227,7 +250,8 @@ info:"During his unsuccessful 99bid98 for the 2012 Republican 99presidential98 n
 url: "http://i.huffpost.com/gen/1217795/images/o-RICK-PERRY-facebook.jpg",
 top:"",
 left:"",
-age:""
+age:"",
+video: "https://archive.org/details/WUSA_20161214_070700_CBS_Overnight_News?q=Rick+Perry+Energy+debate#start/1536/end/1596"
 },
 {
 name: 'Betsy DeVos',
@@ -239,6 +263,7 @@ url:  'img/devos.jpg',
 top:"",
 left:"",
 age: "58",
+video: "https://archive.org/details/MSNBCW_20161123_200000_MSNBC_Live_With_Kate_Snow?q=betsy+devos+private#start/2042/end/2102"
 },
 
 {
@@ -248,7 +273,8 @@ jobdescription: "oversees the U.S. Department of Veterans Affairs in its mission
 url: "https://image.freepik.com/free-icon/question-mark_318-52837.jpg",
 top:"",
 left:"",
-age:""
+age:"",
+video: ""
 },
 
 {
@@ -259,7 +285,8 @@ info:"Former Commander of the United States Southern Command, dealt with migrati
 url: "http://3.bp.blogspot.com/-QxvuXdAyIFo/UD63G5mmz_I/AAAAAAAAAzM/gokYBhXWCPs/s1600/kelly+usmc.jpg",
 top:"30%",
 left:"30%",
-age:""
+age:"",
+video:"https://archive.org/details/LINKTV_20161213_160000_Democracy_Now?q=John+Kelly+guantanamo+bay#start/2940/end/3000"
 },
 
   {
@@ -270,7 +297,8 @@ info:"She said she was 99'not a fan'98 of the Republican nominee. 99Leader98 in 
 url: "http://a1.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTE1ODA0OTcxOTg0ODQ4Mzk3.jpg",
 top:"30%",
 left:"30%",
-age:""
+age:"",
+video: "https://archive.org/details/KNTV_20150710_110000_Early_Today?q=Nikki+Haley+flag#start/148/end/208",
   }
 
 ]
